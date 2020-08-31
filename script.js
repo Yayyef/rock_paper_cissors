@@ -13,4 +13,7 @@ computerPlay = () => {
     return randomNum;
 };
 
+// un commentaire histoire de modifier eu la c'est mieux
+
+
 computerPlay();
