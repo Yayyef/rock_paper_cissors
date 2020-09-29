@@ -4,9 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Roboto+Slab:wght@400;500&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
     
+    <div class="container">
+        <div class="gameName">ShiFuMi: <br> the Game</div>
+
+        <div class="subContainer">
+            <div class="playButton">PLAY</div>
+        </div>
+
+        <div class="gameZone displaySwitch">
+        <div class="buttonContainer">
+            <button class="myButton" id="rock">Rock!</button>
+            <button class="myButton" id="paper">Paper!</button>
+            <button class="myButton" id="scissors">Scissors!</button>
+        </div>
+        
+        
+            <div class="subContainer">
+    
+                <div class="scores">
+                    <p>
+                        Your Selection: 
+                        <br>
+                        <span class="playerSelectionDisplay" id="playerSelectionDisplay"></span>
+                        <br>
+                        <span class="playerScoreDisplay"></span>
+                    </p>
+    
+                </div>
+                <div class="scores">
+                    <p>
+                        Computer Selection: <br>
+                        <span class="computerSelectionDisplay" id="computerSelectionDisplay"></span>
+                        <br>
+                        <span class="computerScoreDisplay"></span>
+                    </p>
+                </div>
+    
+            </div>
+    
+            <div class="subContainer">
+    
+                <div class="resultDisplay"></div>
+    
+            </div>
+        </div>
+
+        <div class="subContainer" id="gameOutcomeDisplay">
+
+            <div class="gameOutcome"></div>
+
+        </div>
+
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

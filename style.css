@@ -1,0 +1,117 @@
+body {
+    font-family:'Roboto Slab', serif;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+}
+
+.container {
+    max-width: 1024px;
+    height: 1024px;
+    margin: 0px auto 0px auto;    
+    text-align: center;
+}
+
+.playButton {
+    height: 150px;
+    width: 150px;
+    border-radius: 100px;
+    margin-top: 70px;
+    margin-left: 20px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 2rem;
+    background-color: rgba(163, 0, 0, 0.753);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.playButton:hover {
+    transform: scale(1.1);
+    transition-duration: 250ms;
+    border: solid white;
+    color: white;
+}
+
+.subContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+
+.displaySwitch {
+    display: none;
+}
+.gameName {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    color: whitesmoke;
+    font-size: 3rem;
+    padding-top: 20px;
+}
+
+.myButton {
+    height: 150px;
+    width: 250px;
+    border-radius: 10px;
+    margin-top: 70px;
+    margin-left: 20px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 2rem;
+    
+}
+
+.myButton:hover {
+    color: whitesmoke;
+    transform: scale(1.1);
+    transition-duration: 250ms;
+}
+
+.scores {
+    height: 150px;
+    width: 300px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.2rem;
+    background-color: rgba(255, 255, 255, 0.212);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resultDisplay, .gameOutcome {
+    height: 90px;
+    width: 300px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 2rem;
+    background-color: rgba(255, 255, 255, 0.212);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#rock {
+    background-image: url(http://www.photogriffon.com/photos-du-monde/DWAYNE-JOHNSON-THE-ROCK-th-best-pictures-ses-plus-belles-photos/DWAYNE-JOHNSON-THE-ROCK-photo-man-maxy-force-bodybuilding-1.jpg);
+    background-position: center;
+    background-size: contain;
+
+}
+
+#paper {
+    background-image: url(https://www.sortiraparis.com/images/1001/74061/562675-cannabis-des-elus-et-des-medecins-reclament-la-legalisation.jpg);
+    background-position: center;
+    background-size: contain;
+}
+
+#scissors {
+    background-image: url(http://www.knowledgewebllc.com/wp-content/uploads/2012/12/Scissors-cutting-paper-Morguefile-file00021174926072-300x224.jpg);
+    background-position: center;
+    background-size: contain;
+}
+
+
+
