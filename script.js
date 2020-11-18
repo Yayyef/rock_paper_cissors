@@ -3,7 +3,7 @@ let playerSelection = 'rock';
 let computerSelection; 
 let playerScore = 0;
 let computerScore = 0;
-let rounds = 0;
+let rounds = 1;
 
 const playButton = document.querySelector('.playButton');
 const gameZone = document.querySelector('.gameZone');
@@ -12,6 +12,7 @@ const computerSelectionDisplay = document.querySelector('.computerSelectionDispl
 const playerScoreDisplay = document.querySelector('.playerScoreDisplay');
 const computerScoreDisplay = document.querySelector('.computerScoreDisplay');
 const resultDisplay = document.querySelector('.resultDisplay');
+const roundsDisplay = document.querySelector('.rounds');
 const gameOutcome = document.querySelector('.gameOutcome')
 const gameOutcomeDisplay = document.getElementById('gameOutcomeDisplay');
 
@@ -23,11 +24,11 @@ playButton.addEventListener('click', function() {
 });
 
 const buttons = Array.from(document.querySelectorAll('button'));
-  buttons.forEach(button => button.addEventListener('click', function(e) {
+
+buttons.forEach(button => button.addEventListener('click', function (e) {
     playerSelection = e.explicitOriginalTarget.id;
-    
     game(playerSelection);
-  }));
+}));
 
 
 function computerPlay() {
@@ -43,6 +44,7 @@ function computerPlay() {
 function playRound() {
     
     rounds++;
+    roundsDisplay.innerHTML = `${rounds} out of 5`
     console.log(rounds);
     computerSelection = computerPlay();
     playerSelectionDisplay.textContent =  playerSelection;
@@ -88,7 +90,6 @@ function playRound() {
     computerScoreDisplay.textContent = computerScore;
     resultDisplay.textContent = result;
     
-    
     return result;
 };
 
@@ -109,25 +110,14 @@ function game() {
 };
 
 function resetGame() {
-    rounds = 0;
-    playerScore = '';
-    computerScore = '';
-    playerScoreDisplay.textContent = '';
-    computerScoreDisplay.textContent = '';
-    resultDisplay.textContent = '';
+    rounds = 1;
+    roundsDisplay.innerHTML = `${rounds} out of 5`;
+    playerScore = 0;
+    computerScore = 0;
+    playerScoreDisplay.textContent = 0;
+    computerScoreDisplay.textContent = 0;
+    resultDisplay.textContent = 0;
 };
-
-// function game() {
-//     for (let i = 1; i <= 5; i++) {
-//         playRound(playerSelection);              
-//         // let roundOutcome = playRound(playerSelection, computerSelection);
-//         // alert("Round " + i + ":\n" + roundOutcome);
-//         console.log(playerScore, computerScore);
-//         // mettre ici un conditionnel pour augmenter ou diminuer player score?        
-        
-//     };   
-//     
-// }
 
    
 

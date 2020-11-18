@@ -66,9 +66,13 @@ body {
     transition-duration: 250ms;
 }
 
+.myButton:focus {
+    border: solid 5px;
+}
+
 .scores {
     height: 150px;
-    width: 300px;
+    width: 35%;
     border-radius: 10px;
     margin-top: 20px;
     margin-left: 20px;
@@ -78,6 +82,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.scores.rounds {
+    width: 20%;
+    font-weight: bold;
+    font-size: 2rem;
 }
 
 .resultDisplay, .gameOutcome {
